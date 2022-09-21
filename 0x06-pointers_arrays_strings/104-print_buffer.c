@@ -2,32 +2,16 @@
 #include <stdio.h>
 
 /**
- * print_buffer - prints a s bytes of a buffer
- * @c: buffer to print
- * @s: bytes of buffer to print
- * @l: line of buffer to print
+ * main - check the code
  *
- * Return: void
+ * Return: Always 0.
  */
-
-void print_buffer(char *c, int s, int l)
+int main(void)
 {
-	int j, k;
+	char buffer[] = "This is a string!And this is the rest of the #buffer :)\n";
 
-	for (j = 0; j <= 9; j++)
-	{
-		if (j <= s)
-			printf("%02x", c[l * 10 + j]);
-		else
-			printf("  ");
-		if (j % 2)
-			putchar(' ');
-	}
-	for (k = 0; k <= s; k++)
-	{
-		if (c[l * 10 + k] > 31 && c[l * 10 + k] < 127)
-			putchar(c[l * 10 + k]);
-		else
-			putchar('.');
-	}
+	printf("%s\n", buffer);
+	printf("-----------------\n");
+	print_buffer(buffer, sizeof(buffer));
+	return (0);
 }
