@@ -1,1 +1,1 @@
-A repository For the Low-level programming & Algorithm projects/tasks.
+A repository for the Low-level programming & Algorithm projects/tasks.
